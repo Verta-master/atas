@@ -1376,7 +1376,7 @@ a.map__link:active {
     margin: 0;
     width: 40px;
     height: 40px;
-    background-image: url(../../img/icons/phone-white.png);
+    background-image: url(../img/icons/phone-white.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 20px 20px;
@@ -1502,6 +1502,11 @@ a.map__link:active {
   .header__link {
     margin-right: 10px;
   }
+  .modal .title {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
   .map__title--main,
   .title,
   h1,
@@ -1515,5 +1520,8 @@ a.map__link:active {
     float: none;
     margin-left: auto;
     margin-right: auto;
+  }
+  .modal {
+    padding: 30px;
   }
 }
