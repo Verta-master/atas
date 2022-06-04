@@ -1,0 +1,139 @@
+.request {
+  position: relative;
+  z-index: 1;
+  padding-top: 70px;
+  padding-bottom: 80px;
+  background-color: @yellow;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    transform: scaleX(-1);
+    width: 721px;
+    height: 288px;
+    background-image: url(../img/images/bg-benefits.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .title {
+    position: relative;
+    max-width: 420px;
+    margin-bottom: 60px;
+    margin-top: 80px;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -50px;
+      width: 83px;
+      height: 16px;
+      background-image: url(../img/icons/waves.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+  .social__link {
+    width: 30px;
+    height: 30px;
+    
+    &--wa {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+.request__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.request__form {
+  width: 48%;
+}
+.request__block {
+  position: relative;
+  z-index: 5;
+  width: 46.5%;
+  padding: 50px 55px;
+  padding-right: 25px;
+  border-radius: 20px;
+  background-color: rgb(250, 250, 250);
+}
+.request__download {
+  position: relative;
+  display: block;
+  max-width: 365px;
+  margin-left: auto;
+  padding-left: 35px;
+  margin-top: 25px;
+  font-weight: 700;
+  color: @red;
+  text-decoration: underline;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/icons/download.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+.request__link {
+  position: relative;
+  display: block;
+  padding-left: 50px;
+  text-decoration: none;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &--address::before {
+    width: 19px;
+    height: 19px;
+    background-image: url(../img/icons/location.svg);
+  }
+  &--mobile::before {
+    width: 19px;
+    height: 19px;
+    background-image: url(../img/icons/mobilephone.svg);
+  }
+  &--phone::before {
+    width: 17px;
+    height: 20px;
+    background-image: url(../img/icons/phone.png);
+  }
+  &--time::before {
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/icons/clock.svg);
+  }
+  &--mail::before {
+    width: 18px;
+    height: 18px;
+    background-image: url(../img/icons/mail.svg);
+  }
+  &--time,
+  &--mail,
+  &--phone,
+  &--address {
+    margin-bottom: 35px;
+  }
+}
+a.request__link {
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}

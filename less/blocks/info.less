@@ -1,0 +1,35 @@
+.info {
+  margin-bottom: 100px;
+  min-height: 260px;
+}
+.info__img {
+  width: 150px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  margin-top: -20px;
+  float: left;
+}
+.info__list {
+  .reset();
+  list-style: none;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.info__item {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 50px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background-image: url(../img/icons/tick.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
